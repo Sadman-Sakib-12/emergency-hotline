@@ -46,143 +46,144 @@
         </section>
 
         <div class="grid grid-cols-4 mb-10">
-            <section class="col-span-3">
-
+            <section id="numbers-grid" class="col-span-3">
+                 <!-- card-1 -->
                 <div class="grid grid-cols-3 gap-4 py-2 px-8">
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">National Emergency Number</h1>
+                        <h1 id="national-emergency-title" class="mt-3 font-extrabold">National Emergency Number</h1>
                         <p>National Emergency</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="national-emergency-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">All</button>
                         <div class=" mt-3 flex gap-2">
-                            <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button  class="btn border border-gray-300 rounded-sm px-13">Copy</button>
+                            <button  id="national-emergency" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                    <!-- card-2 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#DFEFFF] py-4 px-4 rounded-2xl  w-15" src="./assets/police.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Police Helpline Number</h1>
+                        <h1 id="police-helpline-title" class="mt-3 font-extrabold">Police Helpline Number</h1>
                         <p>Police</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="police-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Police</button>
                         <div class=" mt-3 flex gap-2">
-                            <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button class="btn border border-gray-300 rounded-sm px-15">Copy</button>
+                            <button id="police-helpline-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-3 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/fire-service.png"
                                 alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Fire Service Number</h1>
+                        <h1 id="fire-service-title" class="mt-3 font-extrabold">Fire Service Number</h1>
                         <p>Fire Service</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="fire-service-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Fire</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="fire-service-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-4 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/ambulance.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Ambulance Service</h1>
+                        <h1 id="ambulance-title" class="mt-3 font-extrabold">Ambulance Service</h1>
                         <p>Ambulance</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="ambulance-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Health</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="ambulance-service-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-5 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Women & Child Helpline</h1>
+                        <h1 id="women-and-child-title" class="mt-3 font-extrabold">Women & Child Helpline</h1>
                         <p>Women & Child Helpline</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="women-and-child-title-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Help</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="women-and-child-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
+                     <!-- card-6 -->
 
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Anti-Corruption Helpline</h1>
+                        <h1 id="anti-corruption-title" class="mt-3 font-extrabold">Anti-Corruption Helpline</h1>
                         <p>Anti-Corruption</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="anti-corruption-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Govt</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="anti-corruption-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-7 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Electricity Helpline</h1>
+                        <h1 id="electricity-title" class="mt-3 font-extrabold">Electricity Helpline</h1>
                         <p>Electricity Outage</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="electricity-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Electricity</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="electricity-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-8 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/brac.png" alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Brac Helpline</h1>
+                        <h1 id="brac-title" class="mt-3 font-extrabold">Brac Helpline</h1>
                         <p>Brac</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="brac-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">NGO</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="brac-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
-
+                     <!-- card-9 -->
                     <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/Bangladesh-Railway.png"
                                 alt="">
-                            <img class="w-6" src="./assets/love.png" alt="">
+                            <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
                         </div>
-                        <h1 class="mt-3 font-extrabold">Bangladesh Railway Helpline </h1>
+                        <h1 id="railway-title" class="mt-3 font-extrabold">Bangladesh Railway Helpline </h1>
                         <p>Bangladesh Railway</p>
-                        <p class=" mt-1 font-bold">999</p>
+                        <p id="railway-number" class=" mt-1 font-bold">999</p>
                         <button class="bg-[#F2F2F2] rounded-full px-2">Travel</button>
                         <div class=" mt-3 flex gap-2">
                             <button class=" border border-gray-300 rounded-sm px-13">Copy</button>
-                            <button class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
+                            <button id="railway-button" class="text-white bg-[#00A63E] px-15 rounded-md ">Call</button>
                         </div>
                     </div>
                 </div>
@@ -197,17 +198,16 @@
                         </div>
                         <div
                             class="text-white flex justify-center items-center gap-1 bg-green-600 px-6 py-2 rounded-full">
-                            <button class="">Clear</button>
+                            <button id="clear-button" class="">Clear</button>
                         </div>
                     </div>
-                    <div>
+                    <div id="call-history-container" class="mt-4 space-y-2">
 
                     </div>
                 </div>
             </section>
         </div>
-
     </main>
+    <script src="./index.js"></script>
 </body>
-
 </html>
