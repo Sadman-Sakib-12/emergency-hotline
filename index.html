@@ -9,25 +9,25 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class=" bg-[rgba(245,255,246,1)]">
+<body class=" mb-40 0  bg-[rgba(245,255,246,1)]">
     <header>
-        <div class="flex justify-between items-center  py-4 px-5 lg:px-10">
+        <div class="flex justify-between items-center  py-4 px-3 lg:px-10">
             <div class="flex items-center gap-2">
                 <img class=" w-8 lg:w-15" src="./assets/logo.png" alt="">
                 <h1 class=" text-xs lg:text-2xl font-extrabold text-green-700">Emergency <br>Service</h1>
             </div>
-            <div class="flex justify-center items-center gap-5">
-                <div class="bg-green-100 gap-1 px-4 lg:px-8 py-2 flex justify-center items-center rounded-full">
+            <div class="flex justify-center items-center gap-2">
+                <div class="bg-green-100 gap-1 px-3 lg:px-8 py-2 flex justify-center items-center rounded-full">
                     <p id="heart-count" class="text-xl font-bold  ">0</p>
                     <img class="w-7" src="./assets/heart.png" alt="">
                 </div>
                 <div class="bg-green-100 px-2 lg:px-5 py-3 rounded-full  flex justify-center items-center gap-2 ">
-                    <p id="coins-count" class="font-extrabold">100</p>
+                    <p id="coins-count" class="text-xs font-extrabold">100</p>
                     <img class="w-6" src="./assets/coin.png" alt="">
                 </div>
-                <div class="text-white flex justify-center items-center gap-1 bg-green-600 px-3 lg:px-6 py-2 rounded-full">
+                <div class="text-white flex justify-center items-center gap-1 bg-green-600 px-2 lg:px-6 py-2 rounded-full">
                     <span id="copy-count">0</span>
-                    <p class="text-xl">Copy</p>
+                    <p class="text-xs font-serif">Copy</p>
                 </div>
             </div>
 
@@ -35,11 +35,11 @@
 
     </header>
     <main>
-        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex justify-center min-w-full lg:w-full   items-center h-50">
+        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex justify-center max-w-full mx-auto   items-center h-50">
             <div class="">
-                <img class="w-20 lg:w-20 mx-auto mb-2" src="./assets/logo.png" alt="">
+                <img class="w-15 lg:w-20 mx-auto mb-2" src="./assets/logo.png" alt="">
                 <h1 class="text-white text-xl lg:text-4xl text-center mb-2">Emergency Service Directory</h1>
-                <p class=" text-white p-2 lg:p-2 text-center text-[16px] lg:text-xl">Government Emergency Services at Your Fingertip – A Project by
+                <p class=" text-white p-2 lg:p-2 text-center text-[12px] lg:text-[18px]">Government Emergency Services at Your Fingertip – A Project by
                     Government of the People’s Republic of Bangladesh</p>
             </div>
         </section>
@@ -47,8 +47,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 mb-10">
             <section id="numbers-grid" class="col-span-3">
                 <!-- card-1 -->
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 py-2 px-8">
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 py-2 px-5">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -64,11 +64,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="national-emergency"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-2 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#DFEFFF] py-4 px-4 rounded-2xl  w-15" src="./assets/police.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -84,11 +84,11 @@
                                 <button>Copy</button>
                             </div>
                             <button id="police-helpline-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-3 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/fire-service.png"
                                 alt="">
@@ -105,11 +105,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="fire-service-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-4 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/ambulance.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -125,11 +125,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="ambulance-service-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-5 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -145,12 +145,12 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="women-and-child-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-6 -->
 
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -166,11 +166,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="anti-corruption-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-7 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/emergency.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -186,11 +186,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="electricity-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-8 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/brac.png" alt="">
                             <img onclick="heartIcon()" class="w-6" src="./assets/love.png" alt="">
@@ -206,11 +206,11 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="brac-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                     <!-- card-9 -->
-                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-90 h-60 rounded-lg shadow px-2 p-2 ">
+                    <div class="numbers-card bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h-60 rounded-lg shadow px-2 p-2 ">
                         <div class="flex justify-between items-center">
                             <img class=" bg-[#FFE3E2] py-4 px-4 rounded-2xl  w-15" src="./assets/Bangladesh-Railway.png"
                                 alt="">
@@ -227,14 +227,14 @@
                                 <button class="">Copy</button>
                             </div>
                             <button id="railway-button"
-                                class="btn active:bg-gray-400 hover:bg-gray-500 w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
+                                class="btn active:bg-gray-400 hover:bg-gray-500 w-35 lg:w-40 text-white bg-[#00A63E]  rounded-md ">Call</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="col-span-1 mt-2">
-                <div class=" bg-[rgba(255,255,255,1)] mt-5 w-90 h:h-100 lg:h-200 rounded-lg  shadow p-4 lg:px-2">
+            <section class="col-span-1 p-6 lg:p-0 mt-2">
+                <div class=" bg-[rgba(255,255,255,1)] mt-5 w-80 lg:w-90 h:h-100 lg:h-200 rounded-lg  shadow p-4 lg:px-2">
                     <div class="flex justify-between items-center  ">
                         <div class="flex justify-center items-center gap-2">
                             <img class="w-5" src="./assets/clock.png" alt="">
