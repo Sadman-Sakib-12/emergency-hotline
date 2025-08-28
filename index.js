@@ -36,9 +36,9 @@ function buttonHandler(buttonId, titleId, eNumber) {
         for (const history of callHistory) {
             const div = document.createElement('div')
             div.innerHTML = `
-            <div class="bg-[#fafafa] rounded-lg p-4 flex justify-center items-center">
-                <div>
-                <h1 class="font-semibold text-sm">${history.service}</h1>
+            <div class="bg-[#fafafa] rounded-lg flex justify-between items-center p-2  gap-5">
+                <div class="">
+                <h1 class="font-semibold text-xs">${history.service}</h1>
                 <p class="text-[#5c5c5c] text-sm">${history.number}</P>
                 </div>
             <p class="text-xs">${history.time}</p>
@@ -80,9 +80,9 @@ document.getElementById("numbers-grid").addEventListener('click', function(event
     if (event.target.closest(".copy-button")) {
 
         const card = event.target.closest(".numbers-card")
-        const emergencyNumbers = card.querySelector("p.e-number").innerText
+        const emergencyNumbers = card.querySelector("p.s-number").innerText
         navigator.clipboard.writeText(emergencyNumbers)
-        alert(`The number has been copied : ${emergencyNumber}`)
+        alert(`The number has been copied : ${emergencyNumbers}`)
         navCopyCount++
         navCopy.innerText = navCopyCount
     }
