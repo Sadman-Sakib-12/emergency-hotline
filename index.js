@@ -1,26 +1,30 @@
-// console.log('ami asy')
-function heartIcon() {
 
-    const heartICount = parseInt(document.getElementById("heart-count").innerText)
+//Love-count
 
-    document.getElementById("heart-count").innerText = heartICount + 1
+function heart() {
+
+    const heartICount = parseInt(document.getElementById("count").innerText)
+
+    document.getElementById("count").innerText = heartICount + 1
 }
+
+// callhistory
 
 const callHistory = [];
 
-function buttonHandler(buttonId, titleId, eNumber) {
+function button(buttonId, titleId, dNumber) {
     document.getElementById(buttonId).addEventListener('click', function () {
 
-        const coinsCount = document.getElementById("coins-count").innerText
+        const coinss = document.getElementById("coins").innerText
 
         const title = document.getElementById(titleId).innerText
-        const emergencyNumber = document.getElementById(eNumber).innerText
+        const emergencyNumber = document.getElementById(dNumber).innerText
 
-        if (coinsCount < 20) {
+        if (coinss < 20) {
             alert('❌ You do not have enough coins. You need at least 20 coins to make a call.')
             return
         }
-        document.getElementById("coins-count").innerText = coinsCount - 20
+        document.getElementById("coins").innerText = coinss - 20
         alert(`📞Calling ${title} ${emergencyNumber}...`)
 
         const history = {
@@ -49,35 +53,35 @@ function buttonHandler(buttonId, titleId, eNumber) {
     })
 }
 
-buttonHandler("national-emergency", "national-emergency-title", "national-emergency-number")
+ button("national-emergency", "national-emergency-title", "national-emergency-number")
 
-buttonHandler("police-helpline-button", "police-helpline-title", "police-number")
+ button("police-helpline-button", "police-helpline-title", "police-number")
 
-buttonHandler("fire-service-button", "fire-service-title", "fire-service-number")
+ button("fire-service-button", "fire-service-title", "fire-service-number")
 
-buttonHandler("ambulance-service-button", "ambulance-title", "ambulance-number")
+ button("ambulance-service-button", "ambulance-title", "ambulance-number")
 
-buttonHandler("women-and-child-button", "women-and-child-title", "women-and-child-title-number")
+ button("women-and-child-button", "women-and-child-title", "women-and-child-title-number")
 
-buttonHandler("anti-corruption-button", "anti-corruption-title", "anti-corruption-number")
+ button("anti-corruption-button", "anti-corruption-title", "anti-corruption-number")
 
-buttonHandler("electricity-button", "electricity-title", "electricity-number")
+ button("electricity-button", "electricity-title", "electricity-number")
 
-buttonHandler("brac-button", "brac-title", "brac-number")
+ button("brac-button", "brac-title", "brac-number")
 
-buttonHandler("railway-button", "railway-title", "railway-number")
+ button("railway-button", "railway-title", "railway-number")
 
 document.getElementById("clear-button").addEventListener('click', function () {
     document.getElementById("call-history-container").innerHTML = ""
     callHistory.length = 0;
 })
 
-const navCopy = document.getElementById("copy-count")
+const navCopy = document.getElementById("counts")
 let navCopyCount = 0;
 
-document.getElementById("numbers-grid").addEventListener('click', function(event) {
+document.getElementById("number").addEventListener('click', function(event) {
 
-    if (event.target.closest(".copy-button")) {
+    if (event.target.closest(".copy")) {
 
         const card = event.target.closest(".numbers-card")
         const emergencyNumbers = card.querySelector("p.s-number").innerText
